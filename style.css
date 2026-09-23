@@ -150,7 +150,7 @@ main{
 }
 
 .Contacto{
- min-width: 50vh;
+ min-width: 100vh;
 }
 
 
@@ -196,6 +196,7 @@ img{
       form{
         color: #91d9b2;
         font-weight: lighter;
+        height:100vh ;
       }
 .contenedorImg{
     display: flex;
