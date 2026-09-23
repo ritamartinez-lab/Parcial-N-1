@@ -149,6 +149,9 @@ main{
     
 }
 
+.Contacto{
+  height:100vh
+}
 
 h1{
     color: #7fdd76;
@@ -201,9 +204,7 @@ img{
     border-radius: 50px;
      box-shadow: 5px 5px 5px #000000;
 }
-.Contacto{
-  height:100vh
-}
+
 .Mapa{
   height: 100vh;
 }
