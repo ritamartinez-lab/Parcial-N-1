@@ -137,7 +137,7 @@ main{
     padding: 10px;
     width: 45%;
     border-radius: 50px;
-    box-shadow:5px 5px 5px #000000;
+    box-shadow:5px 5px 5px #6ace6f;
 }
 .párrafo{
     
@@ -168,7 +168,7 @@ img{
     margin: 10px;
     width: 33%;
     border-radius: 50px;
-    box-shadow: 5px 5px 5px #000000;
+    box-shadow: 5px 5px 5px #6ad37c;
 }
 
       ul{
@@ -177,7 +177,7 @@ img{
         flex-wrap: wrap;
       }
       li{
-        border: solid 3px black;
+        border: solid 3px rgb(149, 225, 132);
         padding: 10px;
         border-radius: 10px;
         margin: 10px;
@@ -202,7 +202,7 @@ img{
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-     box-shadow: 5px 5px 5px #000000;
+     box-shadow: 5px 5px 5px #87d383;
 }
 
 .Mapa{
@@ -240,7 +240,7 @@ img {width: 40%;
   
    h2, .performers h2 {
     font-family: 'Cinzel Decorative', cursive;
-    color: #e6c06c;
+    color: #6ce678;
     margin-bottom: 30px;
     font-size: 2.2em;
   }
@@ -254,35 +254,35 @@ img {width: 40%;
   }
   
   .card {
-    background-color: rgba(255, 248, 220, 0.1);
-    border: 1px solid #c2a23a;
+    background-color: rgba(151, 202, 138, 0.1);
+    border: 1px solid #98d377;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(194, 162, 58, 0.5);
+    box-shadow: 0 0 10px rgba(116, 225, 129, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 20px rgba(144, 226, 133, 0.8);
   }
   
   .card img {
     width: 100%;
     border-radius: 10px;
-    border: 2px solid #c2a23a;
+    border: 2px solid #72d767;
   }
   
   .card h3 {
     margin-top: 15px;
     font-size: 1.5em;
-    color: #f9d67a;
+    color: #a8f97a;
   }
   
   .card p {
     margin-top: 10px;
     font-size: 1em;
-    color: #f4e7b0;
+    color: #74ae64;
   }
 
  @media (min-width: 768px) {
