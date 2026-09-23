@@ -154,7 +154,7 @@ main{
 }
 
 .Formulario{
-  height: 100vh;
+  margin-top: 0;
 }
 h1{
     color: #7fdd76;
