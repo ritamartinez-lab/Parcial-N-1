@@ -140,10 +140,12 @@ main {
 }
 
 img {
-    margin: 10px;
-    width: 33%;
-    border-radius: 50px;
-    box-shadow: 5px 5px 5px #000000;
+    background-color: rgba(51, 122, 23, 0.1);
+    border: 1px solid #3ac277;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(129, 209, 150, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contenedorImg {
