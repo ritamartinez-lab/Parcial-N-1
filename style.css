@@ -130,6 +130,10 @@ main {
    border-radius: 10px;
     box-shadow: 0 0 10px rgba(129, 209, 150, 0.5);
 }
+.imagen:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(145, 232, 180, 0.8);
+}
 
 .párrafo {
     padding: 10px;
