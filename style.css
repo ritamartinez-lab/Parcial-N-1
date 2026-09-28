@@ -41,41 +41,53 @@ header {
     top: 0;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+nav {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #1f2937;
 }
 
-li {
-    border: solid 3px rgb(11, 87, 52);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
+nav ul {
+  display: flex;                
+  justify-content: flex-start;  
+  align-items: center;
+  gap: 12px;                   
+  list-style: none;            
+  margin: 0;
+  padding: 0;
 }
 
-a {
-    text-decoration: none;
-    font-size: 32px;
-    color: #c2eeab;
+nav ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;       
+  color: #ffffff;               /* Color del texto */
+  background-color: #374151;  
+  padding: 10px 18px;           
+  border-radius: 8px;         
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: all 0.25s ease;  
 }
 
-.EnlacesNav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 32px;
+
+nav ul li a:hover {
+  background-color: #2563eb;   
+  color: #ffffff;
+  transform: translateY(-2px);  
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3); 
 }
 
-.EnlacesNav ul li a {
-    font-size: 20px;
-    color: #100b04;
-    display: block;
-    border-bottom: 1px solid transparent;
+nav ul li a:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.EnlacesNav ul li a:hover {
-    border-bottom: 1px dotted #195942;
-}
+
 
 label, input {
     display: block;
