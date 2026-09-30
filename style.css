@@ -268,7 +268,9 @@ img:hover {
     .faq p{
         color: #100b04;
     }
-
+ .faq-answer p{
+        color: #090909;
+    }
 
 @media screen and (max-width: 900px) {
     .Contenedor {
