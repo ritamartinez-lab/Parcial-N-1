@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: #0d0d0d; 
+    background-color: #0d0d0d;
     color: #b0f1b6;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -17,6 +18,7 @@ body {
     padding: 20px;
     text-align: justify;
 }
+
 
 .banner {
     background-image: url("Imagen/Noche imagen 2.jpg");
@@ -29,10 +31,12 @@ body {
     padding: 30px;
 }
 
+
 .banner h2 {
     font-size: 3em;
-    color: rgb(51, 245, 3);
+    color: rgb(52, 243, 4);
 }
+
 
 header {
     background-color: #090909;
@@ -40,6 +44,7 @@ header {
     padding: 10px;
     top: 0;
 }
+
 
 nav {
   width: 100%;
@@ -89,19 +94,23 @@ nav ul li a:active {
 
 
 
+
 label, input {
     display: block;
     margin-top: 10px;
 }
+
 
 form {
     color: #91d9b2;
     font-weight: lighter;
 }
 
+
 h1 {
     color: #2cfa02;
 }
+
 
 h2, .performers h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -110,9 +119,11 @@ h2, .performers h2 {
     font-size: 2.2em;
 }
 
+
 h4 {
     color: #a3f29b;
 }
+
 
 p {
     text-align: justify;
@@ -125,15 +136,18 @@ p {
     color: #bbefcc;
 }
 
+
 main {
     background-color: rgb(6, 6, 6);
 }
+
 
 .Contenedor {
     background-color: rgb(8, 8, 8);
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .imagen {
     background-color: rgb(10, 10, 10);
@@ -147,13 +161,15 @@ main {
     box-shadow: 0 0 20px rgba(145, 232, 180, 0.8);
 }
 
+
 .párrafo {
     padding: 10px;
     width: 45%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: large;   
+    font-size: large;  
 }
+
 
 img {
     background-color: rgba(51, 122, 23, 0.1);
@@ -164,10 +180,12 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 img:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(145, 232, 180, 0.8);
 }
+
 
 .contenedorImg {
     display: flex;
@@ -178,6 +196,7 @@ img:hover {
     box-shadow: 5px 5px 5px #000000;
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -186,10 +205,12 @@ img:hover {
     padding: 20px;
 }
 
+
 .performers {
     text-align: center;
     padding: 60px 20px;
 }
+
 
 .card-grid {
     display: grid;
@@ -197,6 +218,7 @@ img:hover {
     gap: 25px;
     justify-items: center;
 }
+
 
 .card {
     background-color: rgba(51, 122, 23, 0.1);
@@ -207,10 +229,12 @@ img:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(145, 232, 180, 0.8);
 }
+
 
 .card img {
     width: 100%;
@@ -218,20 +242,22 @@ img:hover {
     border: 2px solid #3ac277;
 }
 
+
 .card h3 {
     margin-top: 15px;
     font-size: 1.5em;
     color: #8deb97;
 }
 
+
 .card p {
     margin-top: 10px;
     font-size: 1em;
-    color: #d5f3d3;
+    color: #bff1bc;
 }
 .faq-container { max-width: 650px;
     margin: 40px auto;
-     padding: 0 20px; font-family: system-ui, -apple-system, sans-serif; color: #080808;
+     padding: 0 20px; font-family: system-ui, -apple-system, sans-serif; color: #333;
      } 
 .faq-container h2 { text-align: center;
     margin-bottom: 24px; } 
@@ -272,6 +298,7 @@ img:hover {
         color: #090909;
     }
 
+
 @media screen and (max-width: 900px) {
     .Contenedor {
         background-color: rgb(8, 8, 8);
@@ -289,6 +316,121 @@ img:hover {
         color: #5caa88;
     }
 }
+
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 8px;
+    }
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #8deb97;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #adf1aa;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .Contenedor {
+        background-color: rgb(8, 8, 8);
+    }
+    .imagen {
+        width: 100%;
+    }
+    img {
+        width: 40%;
+    }
+    .párrafo {
+        width: 100%;
+    }
+    h2, .performers h2 {
+        color: #5caa88;
+    }
+}
+/* Estilos para la Tienda y Pasarela Multi-paso */
+.btn-comprar {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.card .precio {
+    color: #2cfa02;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.checkout-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(18, 18, 18, 0.95);
+    border: 1px solid #3ac277;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(129, 209, 150, 0.3);
+}
+
+.checkout-container {
+    margin-top: 20px;
+}
+
+.step-indicators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+}
+
+.step-indicator {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.step-indicator.active {
+    color: #2cfa02;
+}
+
+.checkout-step {
+    display: none;
+}
+
+.checkout-step.active {
+    display: block;
+}
+
+.checkout-step label {
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+
+
 
 
 
