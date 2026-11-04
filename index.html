@@ -164,48 +164,48 @@
  <div class="faq-answer"> 
 <p>La salida es definitiva.</p>
  </div> </details> </section> 
- <!-- NUEVA SECCIÓN DE TIENDA -->
+ 
     <section id="tienda" class="performers">
         <h2>Tienda del Museo - Juguetes</h2>
         <div class="card-grid">
           <div class="card">
-            <img src="Imagen/Dino 1.webp" alt="Dino 1">
+            <img src="Imagen/Dino 1.webp" alt="Dino Marquito">
             <h3>Dino 1</h3>
             <p class="precio">$30.000</p>
             <button class="btn-comprar" onclick="agregarAlCarrito('Dino 1', 30000)">Agregar al carrito</button>
           </div>
           <div class="card">
-            <img src="Imagen/Dino 2.webp" alt="Dino 2">
+            <img src="Imagen/Dino 2.webp" alt="Dino Pedrito">
             <h3>Dino 2</h3>
             <p class="precio">$10.000</p>
             <button class="btn-comprar" onclick="agregarAlCarrito('Dino 2', 30000)">Agregar al carrito</button>
           </div>
           <div class="card">
-            <img src="Imagen/Dino 3.webp" alt="Dino 3">
+            <img src="Imagen/Dino 3.webp" alt="Dino Nachito">
             <h3>Dino 3</h3>
             <p class="precio">$35.000</p>
             <button class="btn-comprar" onclick="agregarAlCarrito('Dino 3', 30000)">Agregar al carrito</button>
           </div>
           <div class="card">
-            <img src="Imagen/Dino 4.webp" alt="Dino 4">
+            <img src="Imagen/Dino 4.webp" alt="Dino Felipe">
             <h3>Dino 4</h3>
             <p class="precio">$20.000</p>
             <button class="btn-comprar" onclick="agregarAlCarrito('Dino 4', 30000)">Agregar al carrito</button>
           </div>
         </div>
     </section>
-    !-- PASARELA DE PAGOS MULTI-PASO -->
+    
     <section id="checkout" class="checkout-section">
-        <h2>Pasarela de Pagos</h2>
+        <h2>Pagos</h2>
         <div class="checkout-container">
-            <!-- Indicadores de pasos -->
+            
             <div class="step-indicators">
                 <div class="step-indicator active" id="ind-step-1">1. Carrito</div>
                 <div class="step-indicator" id="ind-step-2">2. Envío</div>
                 <div class="step-indicator" id="ind-step-3">3. Pago</div>
             </div>
 
-            <!-- Paso 1: Resumen del Carrito -->
+            
             <div class="checkout-step active" id="step-1">
                 <h3>Paso 1: Resumen del Carrito</h3>
                 <div id="cart-items" style="margin-bottom: 20px; color: #bff1bc;">
@@ -214,7 +214,7 @@
                 <p><strong>Total: $<span id="cart-total">0</span></strong></p>
                 <button class="btn-comprar" onclick="irPaso(2)">Continuar con el Envío</button>
             </div>
-            <!-- Paso 2: Datos de Envío -->
+            
             <div class="checkout-step" id="step-2">
                 <h3>Paso 2: Datos de Envío</h3>
                 <form onsubmit="event.preventDefault(); irPaso(3);">
@@ -233,7 +233,7 @@
                     </div>
                 </form>
             </div>
-            <!-- Paso 3: Método de Pago y Confirmación -->
+            
             <div class="checkout-step" id="step-3">
                 <h3>Paso 3: Método de Pago y Confirmación</h3>
                 <form onsubmit="event.preventDefault(); finalizarCompra();">
@@ -257,7 +257,7 @@
                     </div>
                 </form>
             </div>
-            <!-- Mensaje de Éxito -->
+           
             <div class="checkout-step" id="step-success" style="text-align: center;">
                 <h3 style="color: #2cfa02;">¡Compra realizada con éxito!</h3>
                 <p>Gracias por tu adquisición. Te enviaremos los detalles de envío a tu correo electrónico.</p>
@@ -267,7 +267,7 @@
     </section>
 
     
-    <!-- Scripts para controlar la pasarela de pagos multi-paso -->
+    
     <script>
         let carrito = [];
 

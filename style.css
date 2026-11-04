@@ -67,7 +67,7 @@ nav ul li a {
   align-items: center;
   gap: 6px;
   text-decoration: none;       
-  color: #ffffff;               /* Color del texto */
+  color: #ffffff;               
   background-color: #374151;  
   padding: 10px 18px;           
   border-radius: 8px;         
@@ -338,7 +338,7 @@ img:hover {
     color: #adf1aa;
 }
 
-/* Media Queries */
+
 @media screen and (max-width: 900px) {
     .Contenedor {
         background-color: rgb(8, 8, 8);
@@ -356,7 +356,7 @@ img:hover {
         color: #5caa88;
     }
 }
-/* Estilos para la Tienda y Pasarela Multi-paso */
+
 .btn-comprar {
     display: inline-block;
     margin-top: 15px;
