@@ -164,6 +164,175 @@
  <div class="faq-answer"> 
 <p>La salida es definitiva.</p>
  </div> </details> </section> 
+ <!-- NUEVA SECCIÓN DE TIENDA -->
+    <section id="tienda" class="performers">
+        <h2>Tienda del Museo - Juguetes</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="Imagen/Dino 1.webp" alt="Dino 1">
+            <h3>Dino 1</h3>
+            <p class="precio">$30.000</p>
+            <button class="btn-comprar" onclick="agregarAlCarrito('Dino 1', 30000)">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <img src="Imagen/Dino 2.webp" alt="Dino 2">
+            <h3>Dino 2</h3>
+            <p class="precio">$30.000</p>
+            <button class="btn-comprar" onclick="agregarAlCarrito('Dino 2', 30000)">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <img src="Imagen/Dino 3.webp" alt="Dino 3">
+            <h3>Dino 3</h3>
+            <p class="precio">$30.000</p>
+            <button class="btn-comprar" onclick="agregarAlCarrito('Dino 3', 30000)">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <img src="Imagen/Dino 4.webp" alt="Dino 4">
+            <h3>Dino 4</h3>
+            <p class="precio">$30.000</p>
+            <button class="btn-comprar" onclick="agregarAlCarrito('Dino 4', 30000)">Agregar al carrito</button>
+          </div>
+        </div>
+    </section>
+    !-- PASARELA DE PAGOS MULTI-PASO -->
+    <section id="checkout" class="checkout-section">
+        <h2>Pasarela de Pagos</h2>
+        <div class="checkout-container">
+            <!-- Indicadores de pasos -->
+            <div class="step-indicators">
+                <div class="step-indicator active" id="ind-step-1">1. Carrito</div>
+                <div class="step-indicator" id="ind-step-2">2. Envío</div>
+                <div class="step-indicator" id="ind-step-3">3. Pago</div>
+            </div>
+
+            <!-- Paso 1: Resumen del Carrito -->
+            <div class="checkout-step active" id="step-1">
+                <h3>Paso 1: Resumen del Carrito</h3>
+                <div id="cart-items" style="margin-bottom: 20px; color: #bff1bc;">
+                    <p>Tu carrito está vacío. ¡Agrega productos desde la tienda!</p>
+                </div>
+                <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+                <button class="btn-comprar" onclick="irPaso(2)">Continuar con el Envío</button>
+            </div>
+            <!-- Paso 2: Datos de Envío -->
+            <div class="checkout-step" id="step-2">
+                <h3>Paso 2: Datos de Envío</h3>
+                <form onsubmit="event.preventDefault(); irPaso(3);">
+                    <label>Nombre completo:</label>
+                    <input type="text" required placeholder="Ej. Juan Pérez" style="width: 100%; padding: 8px; background: #1f2937; border: 1px solid #3ac277; color: #fff; border-radius: 4px;">
+                    
+                    <label>Dirección:</label>
+                    <input type="text" required placeholder="Ej. Av. Corrientes 1234" style="width: 100%; padding: 8px; background: #1f2937; border: 1px solid #3ac277; color: #fff; border-radius: 4px;">
+                    
+                    <label>Ciudad:</label>
+                    <input type="text" required placeholder="Ej. CABA" style="width: 100%; padding: 8px; background: #1f2937; border: 1px solid #3ac277; color: #fff; border-radius: 4px;">
+                    
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <button type="button" class="btn-comprar" style="background: #374151;" onclick="irPaso(1)">Volver</button>
+                        <button type="submit" class="btn-comprar">Continuar al Pago</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Paso 3: Método de Pago y Confirmación -->
+            <div class="checkout-step" id="step-3">
+                <h3>Paso 3: Método de Pago y Confirmación</h3>
+                <form onsubmit="event.preventDefault(); finalizarCompra();">
+                    <label>Número de Tarjeta:</label>
+                    <input type="text" required placeholder="1234 5678 9012 3456" style="width: 100%; padding: 8px; background: #1f2937; border: 1px solid #3ac277; color: #fff; border-radius: 4px;">
+                    
+                    <div style="display: flex; gap: 10px;">
+                        <div style="flex: 1;">
+                            <label>Vencimiento:</label>
+                            <input type="text" required placeholder="MM/AA" style="width: 100%; padding: 8px; background: #1f2937; border: 1px solid #3ac277; color: #fff; border-radius: 4px;">
+                        </div>
+                        <div style="flex: 1;">
+                            <label>CVV:</label>
+                            <input type="password" required placeholder="123" style="width: 100%; padding: 8px; background: #1f2937; border: 1px solid #3ac277; color: #fff; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <button type="button" class="btn-comprar" style="background: #374151;" onclick="irPaso(2)">Volver</button>
+                        <button type="submit" class="btn-comprar">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Mensaje de Éxito -->
+            <div class="checkout-step" id="step-success" style="text-align: center;">
+                <h3 style="color: #2cfa02;">¡Compra realizada con éxito!</h3>
+                <p>Gracias por tu adquisición. Te enviaremos los detalles de envío a tu correo electrónico.</p>
+                <button class="btn-comprar" onclick="reiniciarCheckout()" style="margin-top: 20px;">Volver a la tienda</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Scripts para controlar la pasarela de pagos multi-paso -->
+    <script>
+        let carrito = [];
+
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({ nombre, precio });
+            actualizarCarritoUI();
+            alert(`¡${nombre} agregado al carrito!`);
+            window.location.hash = '#checkout';
+        }
+
+        function actualizarCarritoUI() {
+            const container = document.getElementById('cart-items');
+            const totalSpan = document.getElementById('cart-total');
+            if (carrito.length === 0) {
+                container.innerHTML = '<p>Tu carrito está vacío. ¡Agrega productos desde la tienda!</p>';
+                totalSpan.innerText = '0';
+                return;
+            }
+            let html = '<ul style="list-style: none; padding: 0;">';
+            let total = 0;
+            carrito.forEach((item, index) => {
+                html += `<li style="display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid #222;">
+                    <span>${item.nombre}</span>
+                    <span>$${item.precio.toLocaleString()}</span>
+                </li>`;
+                total += item.precio;
+            });
+            html += '</ul>';
+            container.innerHTML = html;
+            totalSpan.innerText = total.toLocaleString();
+        }
+        function irPaso(paso) {
+            if (paso === 2 && carrito.length === 0) {
+                alert('Tu carrito está vacío. Agrega al menos un producto para continuar.');
+                return;
+            }
+            document.querySelectorAll('.checkout-step').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.step-indicator').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('step-' + paso).classList.add('active');
+            if(document.getElementById('ind-step-' + paso)) {
+                document.getElementById('ind-step-' + paso).classList.add('active');
+            }
+        }
+
+        function finalizarCompra() {
+            document.querySelectorAll('.checkout-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step-success').classList.add('active');
+            carrito = [];
+            actualizarCarritoUI();
+        }
+
+        function reiniciarCheckout() {
+            irPaso(1);
+            window.location.hash = '#tienda';
+        }
+    </script>
+    </body>
+</html>
+
+
+
+
+
+
 
     </body>
 </html>
