@@ -430,7 +430,18 @@ img:hover {
 }
 
 
+@keyframes flotarFuerte {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
 
+h1.titulo-dinamico, .banner h1 {
+    animation: flotarFuerte 1.5s ease-in-out infinite !important;
+}
 
 
 
