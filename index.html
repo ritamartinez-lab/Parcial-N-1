@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La noche de los museos 2026 en el Museo de Ciencias Naturales</title>
-    <!-- Importación de Bootstrap 5.3 CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -174,12 +174,12 @@
 
 
 
- <!-- NUEVA SECCIÓN DE TIENDA -->
+ 
     <section id="tienda" class="performers">
-        <h2>Tienda del Museo - Juguetes</h2>
+        <h2>Tienda del Museo </h2>
         <div class="card-grid">
           <div class="card">
-            <!-- Imagen ajustada con Bootstrap: altura fija, ancho fluido y centrado -->
+            
             <img src="Imagen/Dino 1.webp" alt="Dino 1" class="img-fluid rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
             <h3>Dino Marquito</h3>
             <p class="precio">$30.000</p>
@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    !-- PASARELA DE PAGOS MULTI-PASO -->
+    !-- PASARELA DE PAGOS  -->
     <section id="checkout" class="checkout-section">
         <h2>Pasarela de Pagos</h2>
         <div class="checkout-container">
@@ -217,7 +217,7 @@
                 <div class="step-indicator" id="ind-step-3">3. Pago</div>
             </div>
 
-            <!-- Paso 1: Resumen del Carrito -->
+            
             <div class="checkout-step active" id="step-1">
                 <h3>Paso 1: Resumen del Carrito</h3>
                 <div id="cart-items" style="margin-bottom: 20px; color: #bff1bc;">
@@ -226,7 +226,7 @@
                 <p><strong>Total: $<span id="cart-total">0</span></strong></p>
                 <button class="btn-comprar" onclick="irPaso(2)">Continuar con el Envío</button>
             </div>
-            <!-- Paso 2: Datos de Envío -->
+            
             <div class="checkout-step" id="step-2">
                 <h3>Paso 2: Datos de Envío</h3>
                 <form onsubmit="event.preventDefault(); irPaso(3);">
@@ -245,7 +245,7 @@
                     </div>
                 </form>
             </div>
-            <!-- Paso 3: Método de Pago y Confirmación -->
+            
             <div class="checkout-step" id="step-3">
                 <h3>Paso 3: Método de Pago y Confirmación</h3>
                 <form onsubmit="event.preventDefault(); finalizarCompra();">
@@ -269,7 +269,7 @@
                     </div>
                 </form>
             </div>
-            <!-- Mensaje de Éxito -->
+            
             <div class="checkout-step" id="step-success" style="text-align: center;">
                 <h3 style="color: #2cfa02;">¡Compra realizada con éxito!</h3>
                 <p>Gracias por tu adquisición. Podes pasar  a retirar tu compra con tu DNI por Avenida Angel Gallardo 490, CABA, de lunes a viernes en el horario de 10.00 a 14.00 hs. .</p>
@@ -279,7 +279,7 @@
     </section>
 
     
-    <!-- Scripts para controlar la pasarela de pagos multi-paso -->
+    
     <script>
         let carrito = [];
 
